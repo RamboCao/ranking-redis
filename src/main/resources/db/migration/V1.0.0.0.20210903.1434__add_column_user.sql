@@ -1,0 +1,2 @@
+ALTER TABLE user ADD score INT AFTER name;
+COMMIT ;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cacheConfig>
+    <moduleName>ranking_redis</moduleName>
+    <dbUsername>root</dbUsername>
+
+    <sqlConfigs>
+        <sqlConfig>
+            <key>user</key>
+            <table>user</table>
+            <columns>
+                <column>
+                    <filed>score</filed>
+                </column>
+                <column>
+                    <filed>id</filed>
+                </column>
+            </columns>
+        </sqlConfig>
+    </sqlConfigs>
+</cacheConfig>
