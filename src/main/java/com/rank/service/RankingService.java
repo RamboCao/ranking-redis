@@ -2,9 +2,15 @@ package com.rank.service;
 
 import com.rank.common.result.Result;
 
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+
 /**
  * @author Caolp
  */
+@Consumes({MediaType.APPLICATION_JSON})
+@Produces({MediaType.APPLICATION_JSON})
+@Path("/rank")
 public interface RankingService {
 
     /**
@@ -14,5 +20,7 @@ public interface RankingService {
      * @param offset
      * @return
      */
-    Result gameRankingTopN(Long gameId, Long topN, Long offset);
+    @GET
+    @Path("/get-top-n/{gameId}/{topN}/{offset}")
+    Result gameRankingTopN(@PathParam("gameId") Long gameId, @PathParam("topN") Long topN, @PathParam("offset") Long offset);
 }

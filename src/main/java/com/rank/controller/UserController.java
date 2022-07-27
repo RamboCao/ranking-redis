@@ -15,7 +15,7 @@ import java.util.UUID;
 /**
  * @author Caolp
  */
-@Controller
+@RestController
 @RequestMapping("api/user-info")
 public class UserController {
 
