@@ -15,7 +15,7 @@ class RankRedisApplicationTests {
 
     @Test
     @AspectAnnotation
-    public void aopTest(){
+    public void aopTest() {
         System.out.println("开始测试" + "caolp");
     }
 

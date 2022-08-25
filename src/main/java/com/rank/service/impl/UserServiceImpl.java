@@ -14,11 +14,9 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User findById(Long id) {
-        return userRepository.findById(id).get();
-    }
 
-    @Override
-    public void test() {
-        System.out.println("print test method.");
+        return userRepository.findById(id).orElseThrow(RuntimeException::new);
+
+
     }
 }
